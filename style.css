@@ -1,0 +1,30 @@
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    
+  }
+  .float{
+    display: none;
+    border: 1px solid red;
+    padding: 5px;
+    margin-left: 5px;
+    position:relative;
+  }
+  .float::before{
+    display:block;
+    content: '';
+    border: 5px solid transparent;
+    border-right-color: red;
+    position: absolute;
+    top:0;
+    left: -10px;
+  }
+  .float::after{
+    display:block;
+    content: '';
+    border: 5px solid transparent;
+    border-right-color: white;
+    position: absolute;
+    top:0;
+    left: -9px;
+  }
